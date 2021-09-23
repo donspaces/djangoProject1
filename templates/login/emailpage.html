@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Email Verification</title>
+</head>
+<body>
+    <div class="messages">
+        <p>
+            We have already sent the verification to the mailbox {{ email }}, please check your mailbox.
+            This page should not be closed until you finish the registeration.
+        </p>
+    </div>
+    <div>
+        <a href={% url "Login:login" %}>Go back to login page</a>
+    </div>
+</body>
+</html>

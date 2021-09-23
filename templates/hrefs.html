@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>reference to webpages:</title>
+    <link rel="stylesheet" href="/static/css/href.css">
+</head>
+<body>
+    <div class="user">
+        {% if not request.user.is_authenticated %}
+            <a href="/login/loginpage/">Log In</a>
+            <a href="/login/signuppage/">Sign Up</a>
+        {% else %}
+            <a href="/logout/">Log Out</a>
+        {% endif %}
+            <a href="">{{ user_profile }}</a>
+    </div>
+    <br>
+    <div class="main">
+        <a href="main-form/">Test 1: Sample</a>
+        <br>
+        <a href="admin/">Superuser</a>
+        <br>
+        <a href="math-form/">Instance 1: A math webpage</a>
+        <br>
+        <a href="dbtest/common/">Database Sample</a>
+        <br>
+        <a href="{{ luckynumber }}/{{ behave }}/specialgift/">A special gift for hana</a>
+    </div>
+    <br>
+    <div class="search">
+        <form action="/search-result/" method="post">
+            {% csrf_token %}
+            <input name="name" placeholder="the thing you want to search">
+            <button name="search">&nbsp;search&nbsp;</button>
+        </form>
+    </div>
+</body>
+</html>

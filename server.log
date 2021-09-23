@@ -1,0 +1,65 @@
+Watching for file changes with StatReloader
+[23/Sep/2021 21:53:32] "GET / HTTP/1.1" 302 0
+[23/Sep/2021 21:53:32] "GET /login/loginpage/?next=/ HTTP/1.1" 200 1161
+[23/Sep/2021 21:53:32] "GET / HTTP/1.1" 302 0
+Not Found: /favicon.ico
+[23/Sep/2021 21:53:32] "GET /favicon.ico HTTP/1.1" 404 3900
+[23/Sep/2021 21:53:43] "GET /login/signuppage/ HTTP/1.1" 200 1606
+[23/Sep/2021 21:54:39] "POST /login/signuppage/ HTTP/1.1" 302 0
+[23/Sep/2021 21:54:40] "GET /login/verifyemail/%3Fname%3Dhanalove HTTP/1.1" 200 452
+[23/Sep/2021 21:55:17] "GET /login/verified/%3Fname%3Dhanalove/%3Fcode%3Ddonnyye%40163.com HTTP/1.1" 200 502
+[23/Sep/2021 21:55:17] "GET /static/js/timeoutscpt.js HTTP/1.1" 200 251
+[23/Sep/2021 21:55:28] "GET / HTTP/1.1" 302 0
+[23/Sep/2021 21:55:28] "GET /login/loginpage/?next=/ HTTP/1.1" 200 1161
+[23/Sep/2021 21:55:39] "POST /login/loginpage/?next=/ HTTP/1.1" 302 0
+[23/Sep/2021 21:55:39] "GET / HTTP/1.1" 200 1084
+[23/Sep/2021 21:55:39] "GET /static/css/href.css HTTP/1.1" 200 85
+[23/Sep/2021 21:55:49] "GET /admin/ HTTP/1.1" 302 0
+[23/Sep/2021 21:55:50] "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2373
+[23/Sep/2021 21:55:50] "GET /static/admin/css/login.css HTTP/1.1" 200 939
+[23/Sep/2021 21:55:50] "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2271
+[23/Sep/2021 21:55:50] "GET /static/admin/css/base.css HTTP/1.1" 200 19513
+[23/Sep/2021 21:55:50] "GET /static/admin/css/responsive.css HTTP/1.1" 200 18545
+[23/Sep/2021 21:55:50] "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 1360
+[23/Sep/2021 21:55:50] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[23/Sep/2021 21:55:50] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[23/Sep/2021 21:55:50] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+[23/Sep/2021 21:55:50] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[23/Sep/2021 21:55:55] "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+[23/Sep/2021 21:55:55] "GET /admin/ HTTP/1.1" 200 7102
+[23/Sep/2021 21:55:55] "GET /static/admin/css/dashboard.css HTTP/1.1" 200 380
+[23/Sep/2021 21:55:55] "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+[23/Sep/2021 21:55:55] "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+[23/Sep/2021 21:55:55] "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+[23/Sep/2021 21:55:58] "GET /admin/Module/tablei/ HTTP/1.1" 200 6864
+[23/Sep/2021 21:55:58] "GET /static/admin/css/changelists.css HTTP/1.1" 200 6874
+[23/Sep/2021 21:55:58] "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+[23/Sep/2021 21:55:58] "GET /static/admin/js/core.js HTTP/1.1" 200 5698
+[23/Sep/2021 21:55:58] "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 5984
+[23/Sep/2021 21:55:58] "GET /static/admin/js/urlify.js HTTP/1.1" 200 7902
+[23/Sep/2021 21:55:58] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Sep/2021 21:55:58] "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+[23/Sep/2021 21:55:58] "GET /static/admin/js/actions.js HTTP/1.1" 200 7664
+[23/Sep/2021 21:55:58] "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 287630
+[23/Sep/2021 21:55:58] "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+[23/Sep/2021 21:55:58] "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+[23/Sep/2021 21:56:02] "GET /admin/ HTTP/1.1" 200 7102
+[23/Sep/2021 21:56:03] "GET /admin/auth/user/ HTTP/1.1" 200 13366
+[23/Sep/2021 21:56:03] "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+[23/Sep/2021 21:56:03] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Sep/2021 21:56:03] "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+[23/Sep/2021 21:56:03] "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+[23/Sep/2021 21:56:03] "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+[23/Sep/2021 21:56:25] "GET /admin/ HTTP/1.1" 200 7102
+[23/Sep/2021 21:56:26] "GET /admin/auth/user/ HTTP/1.1" 200 13366
+[23/Sep/2021 21:56:26] "GET /admin/jsi18n/ HTTP/1.1" 200 3195
+[23/Sep/2021 21:56:31] "GET /admin/ HTTP/1.1" 200 7102
+[23/Sep/2021 21:56:33] "GET / HTTP/1.1" 200 1082
+[23/Sep/2021 21:56:33] "GET /static/css/href.css HTTP/1.1" 304 0
+Performing system checks...
+
+System check identified no issues (0 silenced).
+September 23, 2021 - 21:53:24
+Django version 3.2.7, using settings 'djangoProject1.settings'
+Starting development server at http://0.0.0.0:8000/
+Quit the server with CONTROL-C.

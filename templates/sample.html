@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>my first django webpage</title>
+    <link rel="stylesheet" href="/static/css/design.css">
+</head>
+<h1>{{ text1 }}</h1>
+<p> {{ text2 }}</p>
+{{ link1 | safe }}
+<body>
+    <form action="/main/" method="post">
+        {% csrf_token %}
+        <input type="text" name="items" placeholder="please input a number..." value={{ v }}>
+        <button name="calculate">&nbsp;generate&nbsp;</button>
+    </form>
+<ul>
+    {% for i in text3 %}
+        <li>{{ i }}</li>
+    {% endfor %}
+</ul>
+<div class="link">
+    <a href="{% url "mainpage" %}">&nbsp;Go to index page&nbsp;</a>
+</div>
+<i>{{ warning }}</i>
+</body>

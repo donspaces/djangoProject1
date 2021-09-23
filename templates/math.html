@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This is a sample math webpage</title>
+</head>
+<link rel="stylesheet" href="/static/css/design.css">
+<h1>Math Calculator</h1>
+<body>
+    <form action="/math/" method="post">
+        {% csrf_token %}
+        <input type="text" name="factorI" value={{ value1 }}>
+        <select name="op">
+            {% for i in oprends %}
+                <option value={{ i }}>{{ i }}</option>
+            {% endfor %}
+        </select>
+        <input type="text" name="factorII" value={{ value2 }}>
+        <button name="equal">&nbsp;=&nbsp;</button>
+        <text>{{ result }}</text>
+    </form>
+    <p>{{ message }}</p>
+</body>
+<div class="link">
+    <a href="{% url "mainpage" %}">&nbsp;Go to index page&nbsp;</a>
+</div>
+</html>

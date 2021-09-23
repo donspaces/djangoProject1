@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample database webpage</title>
+</head>
+<link rel="stylesheet" href="/static/css/design.css">
+<h1>Database sample</h1>
+<body>
+    <div class="ui">
+        <ul>
+            <li>Insert item: </li>
+            <div class="insert">
+                <form action="/dbtest/committed/" method="post">
+                    {% csrf_token %}
+                    <p>name: </p>
+                    <input type="text" name="name">
+                    <p>birth: </p>
+                    <input type="date" name="birth">
+                    <p>height: </p>
+                    <input type="text" name="height">
+                    <small>cm</small>
+                    <br>
+                    <button name="commit">&nbsp;Commit&nbsp;</button>
+                </form>
+            </div>
+            <li>Search: </li>
+            <div class="search">
+                <form action="/dbtest/search/" method="post">
+                    {% csrf_token %}
+                    <input type="text" name="key">
+                    <button name="search">&nbsp;Search&nbsp;</button>
+                </form>
+            </div>
+            <li>Delete: </li>
+            <div class="delete">
+                <form action="/dbtest/deleted/" method="post">
+                    {% csrf_token %}
+                    <input type="text" name="keydel">
+                    <button name="delete">&nbsp;Delete&nbsp;</button>
+                </form>
+            </div>
+        </ul>
+    </div>
+    <div class="results">
+        <div class="output">
+            <table border="1">
+                <tr>
+                    <td>name: </td>
+                    <td>{{ disp.name }}</td>
+                </tr>
+                <tr>
+                    <td>birth: </td>
+                    <td>{{ disp.birth | date }}</td>
+                </tr>
+                <tr>
+                    <td>height: </td>
+                    <td>
+                        {{ disp.height }}
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="feedbacks" style="color:green">
+            <p>{{ feedback }}</p>
+        </div>
+        <div class="warnings" style="color:red">
+            <i>{{ warning }}</i>
+        </div>
+    </div>
+    <div class="link">
+        <a href="{% url "Module:index" %}">&nbsp;Go to db view page&nbsp;</a>
+    </div>
+    <div class="link">
+        <a href="{% url "mainpage" %}">&nbsp;Go to index page&nbsp;</a>
+    </div>
+</body>
+</html>

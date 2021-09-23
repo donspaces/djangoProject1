@@ -1,0 +1,27 @@
+body{
+    background-color: lightpink;
+    font-size: 12pt
+}
+lucky_number{
+    font-family: Helvetica;
+    text-align: center;
+}
+h1{
+    font-family: Helvetica Neue;
+    font-size: 20pt;
+}
+h2{
+    font-family: Helvetica Neue;
+    font-size: 14pt;
+}
+blockquote{
+    font-style: italic;
+    font: bold;
+    font-family: Monotype Corsiva;
+}
+button{
+    background-image: url(/static/pics/flower.jpeg);
+    background-size: 100% 100%;
+    font-family: MV Boli;
+    border-style: none;
+}

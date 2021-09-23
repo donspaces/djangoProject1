@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hana Love</title>
+</head>
+<link rel="stylesheet" href="/static/css/love.css">
+<h1>A special gift for hana</h1>
+<body>
+    <div class="lucky_number">
+        <big>Today your lucky number is: {{ luck }}</big>
+        <br>
+        <p>Today
+            <b>hana</b>
+            will: {{ behave }}</p>
+    </div>
+    <video src="/static/js/hana.mp4" controls="controls" autoplay="autoplay">
+        A video for hana
+    </video>
+    <div>
+        <h2>A special password box:</h2>
+        <form action="/{{ luck }}/{{ behave }}/specialgift/" method="post">
+            {% csrf_token %}
+            <input type="password" name="code">
+            <button name="enter">&nbsp;enter&nbsp;</button>
+        </form>
+    </div>
+    <div class="link">
+        <form action="{% url "mainpage" %}" method="post">
+            {% csrf_token %}
+            <button id="return" class="return_button">&nbsp;back to main page&nbsp;</button>
+        </form>
+    </div>
+</body>
+</html>

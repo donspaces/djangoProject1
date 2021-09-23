@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List for current database</title>
+</head>
+<link rel="stylesheet" href="/static/css/design.css">
+<h1>Table output</h1>
+<body>
+{% if listitems %}
+<table border="1">
+    {% for item in listitems %}
+        <tr>
+            <td>{{ item.name }}</td>
+            <td>{{ item.birth }}</td>
+            <td>{{ item.height }}</td>
+        </tr>
+    {% endfor %}
+</table>
+{% else %}
+    <code>Query for table returned no result</code>
+{% endif %}
+<div class="link">
+    <a href="{% url "mainpage" %}">&nbsp;Go to index page&nbsp;</a>
+</div>
+</body>
+</html>
